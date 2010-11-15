@@ -1,0 +1,15 @@
+Source: canaima-estilo-visual-iconos
+Section: misc
+Priority: optional
+Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
+Uploaders: Carlos A. Guerrero M. <guerrerocarlos@gmail.com>, Diego A. Aguilera Z. <diegoaguilera85@gmail.com>, Luis A. Martínez F. <martinez.faneyth@gmail.com>, Francisco J. Vásquez G. <franjvasquezg@gmail.com>
+Build-Depends: debhelper, cdbs
+Standards-Version: 3.7.3
+Homepage: http://canaima.softwarelibre.gob.ve/
+
+Package: canaima-estilo-visual-iconos
+Architecture: all
+Replaces: canaima-estilo-visual (<< 2.0.5)
+Description: Estilo visual de Canaima GNU/Linux
+ Este paquete provee los iconos para el estilo visual
+ de Canaima GNU/Linux.
