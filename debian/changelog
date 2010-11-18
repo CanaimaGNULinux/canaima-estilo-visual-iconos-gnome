@@ -1,3 +1,10 @@
+canaima-estilo-visual-iconos (3.0+1) unstable; urgency=low
+
+  * [e4b1b52] Modificando debian/control
+  * [b669277] Agregando vcs-git a debian/control
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 18 Nov 2010 18:15:06 -0430
+
 canaima-estilo-visual-iconos (3.0+0) unstable; urgency=low
 
   * Reconstrucción del paquete canaima-estilo-visual-iconos de acuerdo con las nuevas políticas de desarrollo de Canaima GNU/Linux
