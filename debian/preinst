@@ -1,9 +1,9 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 CURSORES_VIEJOS = "/usr/share/icons/canaima-cursor"
 ICONOS_VIEJOS = "/usr/share/icons/Oxygen-Green-Canaima"
 
-case "$1" in
+case ${1} in
 
 	install)
 		
@@ -22,3 +22,5 @@ case "$1" in
 		fi
 	;;
 esac
+
+#DEBHELPER#
