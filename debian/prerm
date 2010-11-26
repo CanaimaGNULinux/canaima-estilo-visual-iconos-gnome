@@ -2,8 +2,8 @@
 #
 # ==============================================================================
 # PAQUETE: canaima-estilo-visual-iconos
-# ARCHIVO: preinst
-# DESCRIPCIÓN: Configura el sistema antes de la instalación del paquete.
+# ARCHIVO: prerm
+# DESCRIPCIÓN: Prepara el sistema para que el paquete sea removido.
 # COPYRIGHT:
 #  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 #  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
@@ -16,35 +16,20 @@
 # términos de la Licencia Pública General de GNU (versión 3).
 
 PKG="canaima-estilo-visual-iconos"
-CURSORES_VIEJOS="/usr/share/icons/canaima-cursor"
-ICONOS_VIEJOS="/usr/share/icons/Oxygen-Green-Canaima"
 
 case ${1} in
 
-        install|upgrade)
-		
-		if [ -e ${CURSORES_VIEJOS} ]
-		then
-
-			rm -rf ${CURSORES_VIEJOS}
-
-		fi
-		
-		if [ -e ${ICONOS_VIEJOS} ]
-		then
-
-			rm -rf ${CURSORES_VIEJOS}
-
-		fi
+	remove|upgrade|deconfigure)
 	;;
 
-        abort-upgrade)
-        ;;
+	failed-upgrade)
+	;;
 
-        *)
-                echo "preinst no reconoce el argumento '"${1}"'" >&2
-                exit 1
-        ;;
+	*)
+
+		echo "prerm no reconoce el argumento '"${1}"'" >&2
+		exit 1
+	;;
 
 esac
 

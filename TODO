@@ -4,5 +4,10 @@ ANOTACIONES MISCELÁNEAS
 
 GRANDES MODIFICACIONES
 
+*
 
 PEQUEÑAS MODIFICACIONES
+
+* Now running lintian...
+W: canaima-estilo-visual-iconos source: non-native-package-with-native-version
+

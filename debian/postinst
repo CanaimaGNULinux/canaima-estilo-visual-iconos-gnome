@@ -2,8 +2,8 @@
 #
 # ==============================================================================
 # PAQUETE: canaima-estilo-visual-iconos
-# ARCHIVO: preinst
-# DESCRIPCIÓN: Configura el sistema antes de la instalación del paquete.
+# ARCHIVO: postinst
+# DESCRIPCIÓN: Configura el sistema despues la instalación del paquete.
 # COPYRIGHT:
 #  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 #  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
@@ -16,34 +16,21 @@
 # términos de la Licencia Pública General de GNU (versión 3).
 
 PKG="canaima-estilo-visual-iconos"
-CURSORES_VIEJOS="/usr/share/icons/canaima-cursor"
-ICONOS_VIEJOS="/usr/share/icons/Oxygen-Green-Canaima"
 
 case ${1} in
 
-        install|upgrade)
-		
-		if [ -e ${CURSORES_VIEJOS} ]
-		then
-
-			rm -rf ${CURSORES_VIEJOS}
-
-		fi
-		
-		if [ -e ${ICONOS_VIEJOS} ]
-		then
-
-			rm -rf ${CURSORES_VIEJOS}
-
-		fi
+	configure)
 	;;
 
-        abort-upgrade)
+
+        abort-upgrade|abort-remove|abort-deconfigure)
         ;;
 
         *)
-                echo "preinst no reconoce el argumento '"${1}"'" >&2
+
+                echo "postinst no reconoce el argumento '"${1}"'" >&2
                 exit 1
+
         ;;
 
 esac
