@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos (3.0+2) unstable; urgency=low
+
+  * [c5b6742] Modificando scripts del mantenedor
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 26 Nov 2010 17:32:25 -0430
+
 canaima-estilo-visual-iconos (3.0+1) unstable; urgency=low
 
   * [e4b1b52] Modificando debian/control
