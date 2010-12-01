@@ -1,7 +1,7 @@
 #!/bin/bash -e
 #
 # ==============================================================================
-# PAQUETE: canaima-estilo-visual
+# PAQUETE: canaima-estilo-visual-iconos
 # ARCHIVO: postrm
 # DESCRIPCIÓN: Revierte los cambios hechos por el paquete en los scripts del
 #              mantenedor, de forma tal de asegurarse que el sistema quede
@@ -17,70 +17,11 @@
 # Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los
 # términos de la Licencia Pública General de GNU (versión 3).
 
-PKG="canaima-estilo-visual"
-ARCHIVOS="/etc/grub.d/10_linux \
-/etc/grub.d/05_debian_theme \
-/usr/lib/mime/packages/openoffice.org-writer \
-/usr/lib/mime/packages/openoffice.org-calc \
-/usr/lib/mime/packages/openoffice.org-impress \
-/usr/share/applications/amsn.desktop \
-/usr/share/applications/freemind.desktop \
-/usr/share/applications/htop.desktop \
-/usr/share/applications/openoffice.org-draw.desktop \
-/usr/share/applications/openoffice.org-writer.desktop \
-/usr/share/applications/scribus.desktop \
-/usr/share/applications/vlc.desktop \
-/usr/share/applications/cheese.desktop \
-/usr/share/applications/gnome-btdownload.desktop \
-/usr/share/applications/nm-connection-editor.desktop \
-/usr/share/applications/openoffice.org-impress.desktop \
-/usr/share/applications/openproj.desktop \
-/usr/share/applications/system-config-printer.desktop \
-/usr/share/applications/winecfg.desktop \
-/usr/share/applications/dia-common.desktop \
-/usr/share/applications/gparted.desktop \
-/usr/share/applications/openoffice.org-base.desktop \
-/usr/share/applications/openoffice.org-math.desktop \
-/usr/share/applications/pidgin.desktop \
-/usr/share/applications/thunderbird.desktop \
-/usr/share/applications/xscreensaver.desktop \
-/usr/share/applications/ekiga.desktop \
-/usr/share/applications/gtkpod.desktop \
-/usr/share/applications/openoffice.org-calc.desktop \
-/usr/share/applications/openoffice.org-startcenter.desktop \
-/usr/share/applications/planner.desktop \
-/usr/share/applications/uninstaller.desktop"
+PKG="canaima-estilo-visual-iconos"
 
 case ${1} in
 
         purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-
-                # ================================================
-                # Restaurar los diverts para canaima-estilo-visual
-                # ================================================
-                # Diverts: proceso de reemplazo de archivos puestos
-                # por un paquete A, que van a ser sustituídos por
-                # archivos de un paquete B. El sistema de manejo de
-                # paquetes de Debian no permite que un paquete sobreescriba
-                # archivos de otro (mediante cp o mv) sin hacer un
-                # divert previamente.
-
-                # Para todos los archivos listados en la variable ARCHIVOS...
-                for archivo in ${ARCHIVOS}
-                do
-
-                        # Obtenemos sólo el nombre del archivo y no la ruta completa
-                        BASE=$(basename ${archivo})
-
-                        # Remover un divert del paquete PKG:
-                        # 1.- Luego de la desinstalación, el archivo puesto por el paquete
-                        #     al cual se le hizo divert en el preinst, ya no está.
-                        # 2.- Se restaura a su lugar original el archivo copiado anteriormente
-                        #     a /var/lib/${PKG}/diverts/${BASE} para hacer el divert de ${archivo}
-
-                        dpkg-divert --package ${PKG} --remove --rename --divert /var/lib/${PKG}/diverts/${BASE} ${archivo}
-
-                done
 
         ;;
 
