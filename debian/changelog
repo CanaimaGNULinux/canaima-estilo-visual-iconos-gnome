@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos (3.0+3) unstable; urgency=low
+
+  * [f2ccaa5] Quitando postrm erróneo
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 01 Dec 2010 07:53:34 -0430
+
 canaima-estilo-visual-iconos (3.0+2) unstable; urgency=low
 
   * [c5b6742] Modificando scripts del mantenedor
