@@ -1,3 +1,10 @@
+canaima-estilo-visual-iconos (3.0+5) unstable; urgency=low
+
+  * [81f80c3] Corrigiendo permiso de ejecución para archivos que no lo
+    necesitan
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 15 Dec 2010 08:44:16 -0430
+
 canaima-estilo-visual-iconos (3.0+4) unstable; urgency=low
 
   * [95df4de] Cambiando tema de iconos completamente
