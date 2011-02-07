@@ -23,19 +23,14 @@ case ${1} in
 
         install|upgrade)
 		
-		if [ -e ${CURSORES_VIEJOS} ]
-		then
-
+		if [ -e ${CURSORES_VIEJOS} ]; then
 			rm -rf ${CURSORES_VIEJOS}
-
 		fi
 		
-		if [ -e ${ICONOS_VIEJOS} ]
-		then
-
+		if [ -e ${ICONOS_VIEJOS} ]; then
 			rm -rf ${CURSORES_VIEJOS}
-
 		fi
+
 	;;
 
         abort-upgrade)
