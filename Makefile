@@ -7,7 +7,7 @@ SCRIPTS =	"debian/preinst install" \
 		"debian/prerm remove" \
 		"debian/postrm remove" \
 
-all: build
+all: test build
 
 test:
 
@@ -21,6 +21,9 @@ test:
 
 	@echo -n "¡TODO BIEN!\n=================================================================================\n\n"
 
+build:
+
+	@echo ¡Nada para compilar!
 
 install:
 
