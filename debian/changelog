@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos (3.0+9) unstable; urgency=low
+
+  * [d8db955] Corrigiendo tamaño del logo de Canaima
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 08 Feb 2011 01:19:02 -0430
+
 canaima-estilo-visual-iconos (3.0+8) unstable; urgency=low
 
   * [4642ac6] Corrigiendo íconos de cunaguaro/guacharo
