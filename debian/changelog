@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos (3.0+10) unstable; urgency=low
+
+  * [ac6e1c8] Agregando ícono para libreoffice-startcenter
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 04 Mar 2011 11:27:33 -0430
+
 canaima-estilo-visual-iconos (3.0+9) unstable; urgency=low
 
   * [d8db955] Corrigiendo tamaño del logo de Canaima
