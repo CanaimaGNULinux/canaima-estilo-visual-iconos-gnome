@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos (3.0+11) unstable; urgency=low
+
+  * [ddd134a] Cambaindo íconos de Cunaguaro y Guácharo
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 16 Mar 2011 04:28:06 -0430
+
 canaima-estilo-visual-iconos (3.0+10) unstable; urgency=low
 
   * [ac6e1c8] Agregando ícono para libreoffice-startcenter
