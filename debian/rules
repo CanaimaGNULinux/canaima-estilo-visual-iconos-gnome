@@ -4,4 +4,4 @@
 	dh ${@}
 
 override_dh_auto_install:
-	$(MAKE) DESTDIR=$(CURDIR)/debian/canaima-estilo-visual-iconos install
+	$(MAKE) DESTDIR=$(CURDIR)/debian/canaima-estilo-visual-iconos-gnome install
