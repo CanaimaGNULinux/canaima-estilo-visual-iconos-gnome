@@ -12,6 +12,7 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos
 Package: canaima-estilo-visual-iconos-gnome
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: canaima-estilo-visual-iconos (>= 3.0)
 Description: Iconos del estilo visual de Canaima
  Este paquete provee los iconos para el estilo visual
  de Canaima GNU/Linux.
