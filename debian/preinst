@@ -16,21 +16,10 @@
 # términos de la Licencia Pública General de GNU (versión 3).
 
 PKG="canaima-estilo-visual-iconos"
-CURSORES_VIEJOS="/usr/share/icons/canaima-cursor"
-ICONOS_VIEJOS="/usr/share/icons/Oxygen-Green-Canaima"
 
 case ${1} in
 
         install|upgrade)
-		
-		if [ -e ${CURSORES_VIEJOS} ]; then
-			rm -rf ${CURSORES_VIEJOS}
-		fi
-		
-		if [ -e ${ICONOS_VIEJOS} ]; then
-			rm -rf ${CURSORES_VIEJOS}
-		fi
-
 	;;
 
         abort-upgrade)
