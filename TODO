@@ -9,5 +9,5 @@ GRANDES MODIFICACIONES
 PEQUEÑAS MODIFICACIONES
 
 * Now running lintian...
-W: canaima-estilo-visual-iconos source: non-native-package-with-native-version
+W: canaima-estilo-visual-iconos-gnome source: non-native-package-with-native-version
 

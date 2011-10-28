@@ -6,8 +6,8 @@ Uploaders: Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.1
 Homepage: http://canaima.softwarelibre.gob.ve/
-Vcs-Git: git://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos.git
-Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos/trees/master
+Vcs-Git: git://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos-gnome.git
+Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos-gnome/trees/master
 
 Package: canaima-estilo-visual-iconos-gnome
 Architecture: all
