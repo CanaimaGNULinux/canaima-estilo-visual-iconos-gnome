@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos-gnome (3.1-6) unstable; urgency=low
+
+  * [0b5691a] Agregando Conflicts con canaima-estilo-visual-iconos.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 28 Oct 2011 16:54:34 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-5) unstable; urgency=low
 
   * [2e5073f] Removiendo script para el cambio de nombres.
