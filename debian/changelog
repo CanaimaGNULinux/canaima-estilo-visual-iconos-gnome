@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos-gnome (3.1-5) unstable; urgency=low
+
+  * [2e5073f] Removiendo script para el cambio de nombres.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 28 Oct 2011 15:43:57 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-4) unstable; urgency=low
 
   * [bde0ee9] Agregando Replaces a canaima-estilo-visual-iconos para
