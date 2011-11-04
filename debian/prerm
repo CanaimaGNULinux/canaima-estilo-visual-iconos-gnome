@@ -34,5 +34,13 @@ case ${1} in
 esac
 
 #DEBHELPER#
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
+  for name in debian-swirl gnome-foot swirl-foot; do
+    update-alternatives --remove start-here.svg /usr/share/icons/canaima-iconos/places/scalable/$name.svg
+  done
+  rm -f /usr/share/icons/gnome/icon-theme.cache
+fi
 
 exit 0
