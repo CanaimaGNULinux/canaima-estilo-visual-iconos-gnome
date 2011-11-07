@@ -1,4 +1,12 @@
+canaima-estilo-visual-iconos-gnome (3.1-7) unstable; urgency=low
 
+  * [fc5c85f] modificando el postinstall
+  * [e5d97b5] Nueva versión
+  * [99b2acc] quitando modificacion del post install
+  * [006e312] Nueva versión
+  * [f0f8ebb] Nueva versión
+
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Mon, 07 Nov 2011 09:30:41 -0430
 
 canaima-estilo-visual-iconos-gnome (3.1-6) unstable; urgency=low
 
