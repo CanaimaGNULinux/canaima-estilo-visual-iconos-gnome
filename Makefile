@@ -2,9 +2,7 @@
 
 SHELL := sh -e
 
-SCRIPTS =	"debian/preinst install" \
-		"debian/postinst configure" \
-		"debian/prerm remove" \
+SCRIPTS =	"debian/postinst configure" \
 		"debian/postrm remove" \
 
 all: test build
@@ -27,12 +25,13 @@ build:
 
 install:
 
-	mkdir -p $(DESTDIR)/usr/share/icons/
+	mkdir -p $(DESTDIR)/usr/share/icons/default/
 	cp -r canaima-iconos canaima-cursores $(DESTDIR)/usr/share/icons/
 
 uninstall:
 
 	rm -rf $(DESTDIR)/usr/share/icons/canaima-cursores/
+	rm -rf $(DESTDIR)/usr/share/icons/default/
 	rm -rf $(DESTDIR)/usr/share/icons/canaima-iconos/
 
 clean:

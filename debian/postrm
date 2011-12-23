@@ -22,6 +22,14 @@ PKG="canaima-estilo-visual-iconos-gnome"
 case ${1} in
 
         purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+
+		ADVERTENCIA "Removiendo cursores de Canaima ..."
+		update-alternatives --remove x-cursor-theme /usr/share/icons/canaima-cursores/cursor.theme
+
+		ADVERTENCIA "Removiendo iconos de Canaima ..."
+		update-alternatives --remove start-here.svg /usr/share/icons/canaima-iconos/places/scalable/canaima-logo.svg
+
+		rm -rf /usr/share/icons/canaima-iconos/icon-theme.cache
 	;;
 
         *)
