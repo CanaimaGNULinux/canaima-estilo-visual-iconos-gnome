@@ -1,12 +1,17 @@
 canaima-estilo-visual-iconos-gnome (3.1-7) unstable; urgency=low
 
+  [ Sasha Veronica Solano Grosjean ]
   * [fc5c85f] modificando el postinstall
   * [e5d97b5] Nueva versión
   * [99b2acc] quitando modificacion del post install
   * [006e312] Nueva versión
   * [f0f8ebb] Nueva versión
 
- -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Mon, 07 Nov 2011 09:30:41 -0430
+  [ Luis Alejandro Martínez Faneyth ]
+  * [7d04ba2] Agregando íconos de Ucumari y Turpial, ajustando scripts
+    del mantedor
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 23 Dec 2011 12:33:32 -0430
 
 canaima-estilo-visual-iconos-gnome (3.1-6) unstable; urgency=low
 
