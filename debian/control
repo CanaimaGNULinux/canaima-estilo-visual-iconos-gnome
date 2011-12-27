@@ -15,6 +15,6 @@ Depends: hicolor-icon-theme, libgtk2.0-bin, librsvg2-common, ${shlibs:Depends}, 
 Replaces: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
 Conflicts: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
 Provides: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
-Description: Iconos del estilo visual de Canaima
+Description: Iconos del estilo visual de Canaima GNU/Linux
  Este paquete provee los iconos para el estilo visual
  de Canaima GNU/Linux.
