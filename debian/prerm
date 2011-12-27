@@ -2,10 +2,8 @@
 #
 # ==============================================================================
 # PAQUETE: canaima-estilo-visual-iconos-gnome
-# ARCHIVO: postrm
-# DESCRIPCIÓN: Revierte los cambios hechos por el paquete en los scripts del
-#              mantenedor, de forma tal de asegurarse que el sistema quede
-#              como estaba antes de su instalación.
+# ARCHIVO: prerm
+# DESCRIPCIÓN: Prepara el sistema para que el paquete sea removido.
 # COPYRIGHT:
 #  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 #  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
@@ -21,16 +19,24 @@ PKG="canaima-estilo-visual-iconos-gnome"
 
 case ${1} in
 
-        purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+	remove|upgrade|deconfigure)
 
-		rm -rf /usr/share/icons/canaima-iconos/icon-theme.cache
+		ADVERTENCIA "Removiendo cursores de Canaima ..."
+		update-alternatives --remove x-cursor-theme /usr/share/icons/canaima-cursores/cursor.theme
+
+		ADVERTENCIA "Removiendo iconos de Canaima ..."
+		update-alternatives --remove start-here.svg /usr/share/icons/canaima-iconos/places/scalable/canaima-logo.svg
+
 	;;
 
-        *)
+	failed-upgrade)
+	;;
 
-                echo "postrm no reconoce el argumento '"${1}"'" >&2
-                exit 1
-        ;;
+	*)
+
+		echo "prerm no reconoce el argumento '"${1}"'" >&2
+		exit 1
+	;;
 
 esac
 
