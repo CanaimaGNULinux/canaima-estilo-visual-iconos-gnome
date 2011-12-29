@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos-gnome (3.1-13) unstable; urgency=low
+
+  * [8e5de60] Corrigiendo versiones del Conflicts
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 29 Dec 2011 01:43:43 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-12) unstable; urgency=low
 
   * [7630b00] Agregando paquetes transicionales para facilitar la
