@@ -1,3 +1,9 @@
+canaima-estilo-visual-iconos-gnome (3.1-14) unstable; urgency=low
+
+  * [1adbc2d] Corrigiendo debian/triggers
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 29 Dec 2011 01:53:30 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-13) unstable; urgency=low
 
   * [8e5de60] Corrigiendo versiones del Conflicts
