@@ -12,9 +12,34 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos
 Package: canaima-estilo-visual-iconos-gnome
 Architecture: all
 Depends: hicolor-icon-theme, libgtk2.0-bin, librsvg2-common, ${shlibs:Depends}, ${misc:Depends}
-Replaces: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
-Conflicts: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
+Conflicts: canaima-estilo-visual-iconos (<< 3.0), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
+Replaces: canaima-estilo-visual-iconos (<< 3.0), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
 Provides: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
 Description: Iconos del estilo visual de Canaima GNU/Linux
  Este paquete provee los iconos para el estilo visual
  de Canaima GNU/Linux.
+
+Package: canaima-estilo-visual-iconos
+Architecture: all
+Depends: canaima-estilo-visual-iconos-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
+Description: Paquete transicional canaima-estilo-visual-iconos -> canaima-estilo-visual-iconos-gnome
+ Esto es un paquete transicional para que los usuarios puedan
+ actualizar de canaima-estilo-visual-iconos a canaima-estilo-visual-iconos-gnome sin muchos
+ problemas. Puede ser removido.
+
+Package: gnome-icon-theme
+Architecture: all
+Depends: canaima-estilo-visual-iconos-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
+Description: Paquete transicional gnome-icon-theme -> canaima-estilo-visual-iconos-gnome
+ Esto es un paquete transicional para que los usuarios puedan
+ actualizar de gnome-icon-theme a canaima-estilo-visual-iconos-gnome sin muchos
+ problemas. Puede ser removido.
+
+Package: dmz-cursor-theme
+Architecture: all
+Depends: canaima-estilo-visual-iconos-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
+Description: Paquete transicional dmz-cursor-theme -> canaima-estilo-visual-iconos-gnome
+ Esto es un paquete transicional para que los usuarios puedan
+ actualizar de dmz-cursor-theme a canaima-estilo-visual-iconos-gnome sin muchos
+ problemas. Puede ser removido.
+
