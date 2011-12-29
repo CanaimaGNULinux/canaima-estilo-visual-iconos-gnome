@@ -12,8 +12,8 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-estilo-visual-iconos
 Package: canaima-estilo-visual-iconos-gnome
 Architecture: all
 Depends: hicolor-icon-theme, libgtk2.0-bin, librsvg2-common, ${shlibs:Depends}, ${misc:Depends}
-Conflicts: canaima-estilo-visual-iconos (<< 3.0), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
-Replaces: canaima-estilo-visual-iconos (<< 3.0), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
+Conflicts: canaima-estilo-visual-iconos (<< 3.1), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
+Replaces: canaima-estilo-visual-iconos (<< 3.1), gnome-icon-theme (<< 3), dmz-cursor-theme (<< 1)
 Provides: canaima-estilo-visual-iconos, gnome-icon-theme, dmz-cursor-theme
 Description: Iconos del estilo visual de Canaima GNU/Linux
  Este paquete provee los iconos para el estilo visual
