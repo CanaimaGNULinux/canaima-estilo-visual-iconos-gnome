@@ -1,3 +1,11 @@
+canaima-estilo-visual-iconos-gnome (3.1-16) unstable; urgency=low
+
+  * [a1fe768] Se agrego el icono de canaima escritorio dinamico
+  * [b440c74] se renombro el nombre de icono  de cfd a canaima-fondos-dinamicos
+  * [6696277] empaquetando renombrando el nombre de los iconos cfd a canaima-fondos-dinamicos
+
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Thu, 31 May 2012 13:24:32 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-15) unstable; urgency=low
 
   * [088657e] Agregando íconos para libreoffice 3.4
