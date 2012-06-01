@@ -1,3 +1,10 @@
+canaima-estilo-visual-iconos-gnome (3.1-17) unstable; urgency=low
+
+  * [112640d] Cambiando nombre denuevo de iconos canaima-fondos-dinamicos
+  * [8cf7cd2] cambiando el nombre de los inconos de canaima-estilo-visual iconos
+
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Fri, 01 Jun 2012 11:29:58 -0430
+
 canaima-estilo-visual-iconos-gnome (3.1-16) unstable; urgency=low
 
   * [a1fe768] Se agrego el icono de canaima escritorio dinamico
